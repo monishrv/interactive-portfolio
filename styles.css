@@ -1,0 +1,173 @@
+/* CSS Reset and Basic Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4CAF50; /* Green accent */
+    --background-color: #121212; /* Dark background */
+    --text-color: #E0E0E0; /* Light text */
+    --card-background: #1E1E1E; /* Card background */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color); 
+    /* ENHANCEMENT: Subtle background texture */
+    background-image: radial-gradient(#ffffff0a 1px, transparent 0);
+    background-size: 40px 40px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+/* Navigation and Hero Styling */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #000000;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+/* Container for the 3D scene */
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+/* ENHANCEMENT: Frosted Glass Effect for Hero text */
+.hero-content {
+    z-index: 10;
+    position: relative;
+    background-color: rgba(18, 18, 18, 0.5); 
+    backdrop-filter: blur(5px); 
+    padding: 30px 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(76, 175, 80, 0.3); 
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.2); 
+}
+
+/* Styling for Main Content Sections */
+section {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.project-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.skills-list {
+    list-style-type: none; 
+    display: inline-block;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.skills-list li:before {
+    content: '⚡'; 
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Contact and Link Styling */
+.link-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #66BB6A; 
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 2%;
+    }
+
+    #navbar ul {
+        padding-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%; 
+    }
+}

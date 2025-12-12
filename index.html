@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Portfolio - Three.js Enhanced</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <h1>[Your Name]</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div id="three-container"></div>
+        
+        <div class="hero-content">
+            <h2>Welcome to my Interactive Portfolio!</h2>
+            <p>Frontend Developer | Three.js Enthusiast</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Me</h3>
+        <p>
+            Hello! I'm [Your Name], a passionate frontend developer focused on creating engaging and interactive web experiences. I love blending creative design with clean, efficient code. I'm currently expanding my skills in 3D visualization using Three.js.
+        </p>
+        <p class="achievements">
+            **Fun Fact/Achievement:** Competitive Rank: [LeetCode/VALO Rank]
+        </p>
+    </section>
+
+    <section id="projects">
+        <h3>My Projects</h3>
+        <div class="project-list">
+            <div class="project-card">
+                <h4>Project Alpha</h4>
+                <p>A responsive website built with HTML, CSS Grid, and vanilla JavaScript. Focused on mobile-first design and accessibility.</p>
+            </div>
+            <div class="project-card">
+                <h4>Project Beta</h4>
+                <p>A small web application using a modern framework like React/Vue, utilizing component-based architecture and API integration.</p>
+            </div>
+            <div class="project-card">
+                <h4>Project Gamma</h4>
+                <p>An experimental project using the Three.js library to render and animate 3D models directly in the browser.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>My Skills</h3>
+        <ul class="skills-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Frontend Frameworks (e.g., React, Vue)</li>
+            <li>Three.js (3D Graphics)</li>
+            <li>UI/UX Design Principles</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h3>Get In Touch</h3>
+        <p>
+            You can find me across the web:
+        </p>
+        <div class="social-links">
+            <a href="YOUR_GITHUB_URL" target="_blank" class="link-button">GitHub Profile</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" class="link-button">LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
